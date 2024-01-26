@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Productivity not product - site blocker",
+  "version": "1.0",
+  "description": "Blocks distracting websites at scheduled times, to allow you to work more focused.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
